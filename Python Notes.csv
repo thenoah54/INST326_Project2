@@ -1,7 +1,33 @@
 title,text,link,tags,meta
-For loops,"can be used to iterate through lists and stuff ありがとう
-",CANVAS,#loops,"created 2024-03-28 17:20:26.978095, Eastern Daylight Time"
-Data types,"integer, string, float, other things exedra nah mean
-",CANVAS,#datatypes,"created 2024-03-28 17:20:26.978095, Eastern Daylight Time"
-326,"object oriented programming classs
-",CANVAS,#class,"created 2024-03-28 17:20:26.978095, Eastern Daylight Time"
+Directory,"import os
+os.getcwd() # get's current working directory.
+os.listdir() # makes a list of visible files in directory.
+os.chdir(path) # change's current working directory.
+",None,"#os,#directory,#path","CREATED: 2024-03-31 23:41:06.682445, Eastern Daylight Time"
+Web Scraping,"from bs4 import BeautifulSoup
+import lxml
+
+with open(""website.html"", encoding=""utf8"") as file:
+    contents = file.read()
+
+soup = BeautifulSoup(contents, ""html.parser"")
+print(soup.title.string)
+",None,"#webscraping,#beautifulsoup","CREATED: 2024-03-31 23:41:06.682445, Eastern Daylight Time"
+API,"import requests
+
+response = requests.get(url=""http://api.open-notify.org/iss-now.json"")
+response.raise_for_status()
+
+longitude = response.json()[""iss_position""][""longitude""]
+latitude = response.json()[""iss_position""][""latitude""]
+iss_position = (longitude, latitude)
+print(iss_position)
+
+parameters = {
+    ""lat"": 12,
+    ""lng"": 13,
+    ""formatted"": 0
+}
+
+response = requests.get(url=""http://api.open-notify.org/iss-now.json"", params=parameters)
+",None,"#API,#requests","CREATED: 2024-03-31 23:41:06.682445, Eastern Daylight Time"
